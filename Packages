@@ -5,3 +5,13 @@ public class MyClass {
         System.out.println("Inside MyClass from mypackage");
     }
 }
+
+// File: Main.java
+import mypackage.MyClass;
+
+class Main {
+    public static void main(String[] args) {
+        MyClass obj = new MyClass();
+        obj.show();
+    }
+}
