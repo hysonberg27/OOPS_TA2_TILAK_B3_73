@@ -1,0 +1,21 @@
+import mypackage.MyClass;
+
+class Main {
+    public static void main(String[] args) {
+        MyClass obj = new MyClass();
+        obj.show();
+    }
+}
+
+// 6. Exception Handling
+class ExceptionDemo {
+    public static void main(String[] args) {
+        try {
+            int result = 10 / 0;
+        } catch (ArithmeticException e) {
+            System.out.println("Exception caught: " + e);
+        } finally {
+            System.out.println("Finally block executed");
+        }
+    }
+}
